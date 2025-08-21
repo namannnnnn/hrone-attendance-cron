@@ -2,8 +2,18 @@ name: Mark Attendance
 
 on:
   schedule:
-    - cron: '50 4 * * 1-5'   # 10:20 AM IST, Monday–Friday
-    - cron: '22 13 * * 1-5'  # 6:52 PM IST, Monday–Friday
+    # - cron: '50 4 * * 1-5'   # 10:20 AM IST, Monday–Friday
+    # - cron: '22 13 * * 1-5'  # 6:52 PM IST, Monday–Friday
+    - cron: '34 4 * * 1'   # Monday 10:04 AM IST
+    - cron: '04 13 * * 1'  # Monday 6:34 PM IST
+    - cron: '15 4 * * 2'   # Tuesday 10:15 AM IST
+    - cron: '53 12 * * 2'  # Tuesday 6:40 PM IST
+    - cron: '02 4 * * 3'   # Wednesday 10:02 AM IST
+    - cron: '22 13 * * 3'  # Wednesday 6:32 PM IST
+    - cron: '20 4 * * 4'   # Thursday 10:20 AM IST
+    - cron: '45 12 * * 4'  # Thursday 6:50 PM IST
+    - cron: '10 4 * * 5'   # Friday 10:10 AM IST
+    - cron: '56 12 * * 5'  # Friday 6:40 PM IST
 
   workflow_dispatch:         # Allows manual trigger
 
@@ -28,3 +38,5 @@ jobs:
       - name: Run Attendance Script
         run: |
           python main.py
+
+
