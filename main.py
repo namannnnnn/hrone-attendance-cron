@@ -10,7 +10,7 @@ punch_time = now_ist.strftime('%Y-%m-%dT%H:%M')
 login_url = "https://gateway.app.hrone.cloud/oauth2/token"
 login_payload = {
     "username": "naman.parmar@vinculumgroup.com",
-    "password": "Incorrect@021000!",
+    "password": "HRONE@vinnaman021000",
     "grant_type": "password",
     "loginType": "1",
     "companyDomainCode": "vinculum",
